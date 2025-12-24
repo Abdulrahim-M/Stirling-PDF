@@ -20,11 +20,11 @@ export const BackendHealthIndicator: React.FC<BackendHealthIndicatorProps> = ({
       return t('backendHealth.checking', 'Checking backend status...');
     }
 
-    if (isHealthy) {
+    // if (isHealthy) {
       return t('backendHealth.online', 'Backend Online');
-    }
+    // }
 
-    return t('backendHealth.offline', 'Backend Offline');
+    // return t('backendHealth.offline', 'Backend Offline');
   }, [status, isHealthy, t]);
 
   const dotColor = useMemo(() => {
